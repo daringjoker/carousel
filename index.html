@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Demo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="demo">
+        <div class="big-carousel auto-carousel" data-transition-time="500" data-hold-time="3000" >
+            <img src="assets/21.jpg" alt="lifemotto">
+            <img src="assets/22.jpg" alt="carousel image">
+            <img src="assets/23.jpg" alt="carousel image">
+            <img src="assets/24.jpg" alt="carousel image">
+            <img src="assets/25.jpg" alt="carousel image">
+            <img src="assets/26.jpg" alt="carousel image">
+        </div>
+    </div>
+    <header id="mainhdr">
+        <h1>Image Carousel</h1>
+        <p>Demo</p>
+     </header>
+    <main class="mainContainer">
+        <h1> Features </h1>
+        <article class="simple-usage">
+            <div class="explaination">
+                <h2>Easy to use</h2>
+                <p class="description">
+                    Simply add the className "auto-carousel" to the parent Element
+                    and it will become a carousel with all the direct children as 
+                    carousel elements.
+                    <span class="note">
+                        The default hold period is 1500ms and transition period is 400ms
+                    </span>
+                </p>
+            </div>
+            <div class="carousel auto-carousel" >
+                <img src="assets/1.jpg" alt="lifemotto">
+                <img src="assets/2.png" alt="carousel image">
+                <img src="assets/3.jpg" alt="carousel image">
+                <img src="assets/4.png" alt="carousel image">
+                <img src="assets/5.jpg" alt="carousel image">
+                <img src="assets/6.jpg" alt="carousel image">
+        </div>
+        </article>
+        <article class="configurability">
+            <div class="explaination">
+                <h2>Easy to Configure</h2>
+                <p class="description">
+                    The hold time and transition time and other properties of the carousel can be 
+                    configured easily. There are two ways to achieve that:
+                </p>
+                <ol class="config-style">
+                    <li>
+                        <h3>Using the Html data attribute</h3>
+                        <pre class="code" style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"auto-carousel"</span>
+data-transition-time<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"600"</span> data-hold-time<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"3000"</span> <span style='color:#ff8906; '>></span>      
+children...<br><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span></pre>
+                    </li>
+                    <li>
+                        <h3>Using JavaScript</h3>
+                        <pre class="code" style='color:#d1d1d1;background:#000000;'><span style='color:#e66170; font-weight:bold; '>let</span> slider<span style='color:#d2cd86; '>=</span><span style='color:#e66170; font-weight:bold; '>new</span> Slider<span style='color:#d2cd86; '>(</span>document<span style='color:#d2cd86; '>.</span>querySelector<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#myCarousel</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+slider<span style='color:#d2cd86; '>.</span>holdTime<span style='color:#d2cd86; '>=</span><span style='color:#008c00; '>3000</span><span style='color:#b060b0; '>;</span>
+slider<span style='color:#d2cd86; '>.</span>transitionTime<span style='color:#d2cd86; '>=</span><span style='color:#008c00; '>600</span><span style='color:#b060b0; '>;</span></pre>
+                    </li>
+                </ol>                            
+            </div>
+            <div class="carousel auto-carousel" data-transition-time="600" data-hold-time="3000" >
+                <img src="assets/01.jpg" alt="lifemotto">
+                <img src="assets/02.jpg" alt="carousel image">
+                <img src="assets/03.jpg" alt="carousel image">
+                <img src="assets/04.jpg" alt="carousel image">
+                <img src="assets/05.jpg" alt="carousel image">
+                <img src="assets/06.jpg" alt="carousel image">
+        </div>
+        </article>
+        <article class="versatile">
+            <div class="explaination">
+                <h2>versatile</h2>
+                <p class="description">
+                    The children of the carousel can be any html element,
+                    this child element will be stretched to the full area of the carousel
+                    <br>
+                    <span class="note">
+                        the example along side contains normal html elements/text/forms etc as the carousel children
+                        </span>
+                </p>
+                  
+            </div>
+            <div class="carousel auto-carousel" data-transition-time="900" data-hold-time="4000" >
+                <div>
+                <div class="image-replacement">First</div>
+                </div>
+               <div>
+               <div class="image-replacement"> 
+                   <div>
+                    Second
+                   </div> 
+                   <button>Second Button</button>
+               </div>
+            </div>
+               <div>
+               <div class="image-replacement">
+                   <h3>
+                        versatility in the carousel
+                   </h3>
+               </div>
+            </div>
+            <div>
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <form>
+                      <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Username</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="password" name="" required="">
+                        <label>Password</label>
+                      </div>
+                      <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                      </a>
+                    </form>
+                  </div>
+            </div>
+               <img src="assets/6.jpg" alt="carousel image">
+            </div>
+        </article>
+        <article class="dynamic">
+            <div class="explaination">
+                <h2>Dynamic</h2>
+                <p class="description">
+                    carousel automatically adapts to the changes in width and height of the
+                    parent elements. hence we can use it in our responsive designs;
+
+                    <br>
+                    <span class="note">
+                    the example along side can be resized using the handle on bottom-right corner
+                    </span>
+                </p>                  
+            </div>
+            <div class="last-carousel carousel auto-carousel" data-transition-time="500" data-hold-time="1000" >
+                <img src="assets/11.jpg" alt="lifemotto">
+                <img src="assets/12.jpg" alt="carousel image">
+                <img src="assets/13.jpg" alt="carousel image">
+                <img src="assets/14.jpg" alt="carousel image">
+                <img src="assets/15.jpg" alt="carousel image">
+                <img src="assets/16.jpg" alt="carousel image">
+            </div>
+        </article>
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<footer>
+    &copy; Pukar Giri(SE15) 2021
+</footer>
+</html>
